@@ -1,2 +1,4 @@
 # MAI3
-Devine Major III 
+Devine
+Major III 
+Dok Gent
