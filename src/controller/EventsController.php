@@ -15,11 +15,11 @@ class EventsController extends Controller {
     $conditions = array();
 
     //example: search on title
-    // $conditions[0] = array(
-    //   'field' => 'title',
-    //   'comparator' => 'like',
-    //   'value' => 'schoen'
-    // );
+    $conditions[0] = array(
+      'field' => 'title',
+      'comparator' => 'like',
+      'value' => 'schoen'
+    );
 
     //example: search on location_id
     // $conditions[0] = array(
@@ -96,4 +96,7 @@ class EventsController extends Controller {
     $this->set('events', $events);
   }
 
+  public function view() {
+    $this->set('events', $this->eventDAO->selectAll());
+  }
 }

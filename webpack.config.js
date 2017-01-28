@@ -28,7 +28,7 @@ const copy = new CopyWebpackPlugin([{
 });
 
 const config = {
-  
+
   // no HTML entry points for production build (bundled in JavaScript)
   entry: [
     require.resolve(`react-dev-utils/webpackHotDevClient`),
@@ -43,7 +43,7 @@ const config = {
 
   output: {
     path: path.join(__dirname, `dist`),
-    filename: `js/[name].[hash].js`,
+    filename: `js/[name].js`,
     publicPath
   },
 
@@ -111,7 +111,7 @@ const config = {
         }
       },
       {
-        test: /\.(mp3|mp4|wav)$/,
+        test: /\.(mp3|mp4)$/,
         loader: `file-loader`,
         options: {
           context: `./src`,

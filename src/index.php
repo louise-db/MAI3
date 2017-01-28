@@ -11,6 +11,14 @@ $routes = array(
     'controller' => 'Events',
     'action' => 'index'
   ),
+  'agenda' => array(
+    'controller' => 'Events',
+    'action' => 'view'
+  ),
+  'event-detail' => array(
+    'controller' => 'Events',
+    'action' => 'detail'
+  ),
 );
 
 if(empty($_GET['page'])) {
