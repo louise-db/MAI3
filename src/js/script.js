@@ -4,4 +4,8 @@ const init = () => {
 
 };
 
+// function verwijderFilters() {
+//   document.getElementById(`filters`).reset();
+// }
+
 init();

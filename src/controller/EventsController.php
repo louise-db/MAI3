@@ -12,14 +12,25 @@ class EventsController extends Controller {
   }
 
   public function index() {
+
+  }
+
+  public function view() {
+
+    $tags = $this->eventDAO->selectTags();
+    $this->set('tags', $tags);
+
+    $locations = $this->eventDAO->selectLocations();
+    $this->set('locations', $locations);
+
     $conditions = array();
 
     //example: search on title
-    $conditions[0] = array(
-      'field' => 'title',
-      'comparator' => 'like',
-      'value' => 'schoen'
-    );
+    // $conditions[0] = array(
+    //   'field' => 'title',
+    //   'comparator' => 'like',
+    //   'value' => 'schoen'
+    // );
 
     //example: search on location_id
     // $conditions[0] = array(
@@ -96,7 +107,9 @@ class EventsController extends Controller {
     $this->set('events', $events);
   }
 
-  public function view() {
-    $this->set('events', $this->eventDAO->selectAll());
-  }
+  // public function view() {
+  //   $this->set('events', $this->eventDAO->selectAll());
+  //   // $this->set('locations', $this->eventDAO->());
+  //
+  // }
 }

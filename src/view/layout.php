@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>DOK</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOK</title>
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+</head>
 
-    <?php echo $css;?>
-    <?php echo $css;?>
-
-  </head>
-  <body>
-
+<body>
     <div class="container">
+
       <?php if(!empty($_SESSION['info'])): ?><div class="alert alert-success"><?php echo $_SESSION['info'];?></div><?php endif; ?>
       <?php if(!empty($_SESSION['error'])): ?><div class="alert alert-danger"><?php echo $_SESSION['error'];?></div><?php endif; ?>
 
@@ -23,7 +20,9 @@
                 <p><span>Vandaag</span><br/> Cosy Cozy zorgt tussen 14u en 19u <br />voor meer dan gezellige dj’s.</p>
               </section>
 
-              <img src="assets/img/logo.gif" class="logo" alt="DOK" />
+              <a href="index.php?page=index">
+                <img src="assets/img/logo.gif" class="logo" alt="DOK" />
+              </a>
 
               <form class="search">
                 <input type="text" name="search" placeholder="Search..">
@@ -31,10 +30,11 @@
 
             </section>
           </section>
+          </header>
 
-          <section class="botNav">
+          <!-- <section class="botNav"> -->
             <ul class="navigation">
-              <li class="nav-item"><a href="#">Agenda</a></li>
+              <li class="nav-item"><a href="index.php?page=agenda">Agenda</a></li>
               <li class="nav-item"><a href="#">Praktisch</a></li>
               <li class="nav-item"><a href="#">Zone's</a></li>
               <li class="nav-item"><a href="#">Over</a></li>
@@ -45,8 +45,7 @@
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
             <label for="nav-trigger"></label>
 
-          </section>
-        </header>
+          <!-- </section> -->
             <div class="site-wrap">
 
       <?php echo $content; ?>
@@ -91,7 +90,7 @@
       </div>
     </footer>
     </div>
-
+    <?php echo $css;?>
     <?php echo $js;?>
   </body>
 </html>

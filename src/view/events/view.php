@@ -1,5 +1,38 @@
 <section>
   <h1>Events</h1>
+
+<input class="toggle" id="toggle" type="checkbox" checked>
+<label for="toggle">Filters tonen</label>
+<div cass="expand" id="expand">
+  <section>
+    <input type="reset">
+      <!-- <input type="button" onclick="verwijderFilters()" value="Verwijder filters"> -->
+
+    <form id="filters">
+      <p>Datum</p>
+      <input type="date" name="bday">
+
+      <p>Locatie</p>
+      <ul>
+        <?php foreach($locations as $location): ?>
+            <li><input type="checkbox" name="<?php echo $location['name'];?>" value="<?php echo $location['name'];?>"><?php echo $location['name'];?></li>
+        <?php endforeach;?>
+
+
+      </ul>
+
+      <p>tags</p>
+      <ul>
+      <?php foreach($tags as $tag): ?>
+            <li><input type="checkbox" name="<?php echo $tag['tag'];?>" value="<?php echo $tag['tag'];?>"><?php echo $tag['tag'];?></li>
+      <?php endforeach;?>
+      </ul>
+    </form>
+  </section>
+</div>
+
+
+
   <?php foreach($events as $event): ?>
     <article>
       <header><h2><?php echo $event['title']; ?></h2></header>

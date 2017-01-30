@@ -81,13 +81,20 @@ class EventDAO extends DAO {
 // EXTRA BIJ
 //
 //
-//
-  public function selectAll() {
-  		$sql = "SELECT * FROM `ma3_dok_events`";
-  		$stmt = $this->pdo->prepare($sql);
-  		$stmt->execute();
-  		return $stmt->fetchAll(PDO::FETCH_ASSOC);
-  	}
+  //
+  public function selectLocations() {
+    $sql = "SELECT * FROM `ma3_dok_locations`";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
+  public function selectTags() {
+    $sql = "SELECT * FROM `ma3_dok_tags`";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
 
   public function selectById($id) {
     $sql = "SELECT * FROM `ma3_dok_events` WHERE `id` = :id";
@@ -98,7 +105,7 @@ class EventDAO extends DAO {
   }
 
   public function selectByEventId($eventId) {
-  $sql = "SELECT `locations`.*, `users`.`email` FROM `comments` INNER JOIN `users` ON `users`.`id` = `comments`.`user_id` WHERE `post_id` = :post_id";
+
   $stmt = $this->pdo->prepare($sql);
   $stmt->bindValue(':post_id', $postId);
   $stmt->execute();
