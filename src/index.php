@@ -19,6 +19,10 @@ $routes = array(
     'controller' => 'Events',
     'action' => 'detail'
   ),
+  'errorPage' => array(
+    'controller' => 'Events',
+    'action' => 'errorPage'
+  )
 );
 
 if(empty($_GET['page'])) {

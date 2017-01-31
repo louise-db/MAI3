@@ -123,6 +123,9 @@ class EventsController extends Controller {
 		}else {
 		$this->set('event', $event);
 		}
-
 	}
+
+  public function errorPage() {
+
+  }
 }

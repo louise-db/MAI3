@@ -1,8 +1,5 @@
-<section class="agendaPage">
+<section class="agendaPage" id="content">
   <h3>Agenda</h3>
-  <!-- <input type="reset">
-    <! <input type="button" onclick="verwijderFilters()" value="Verwijder filters"> -->
-
 <input class="toggle" id="toggle" type="checkbox" checked>
 <label for="toggle">Filters tonen</label>
 

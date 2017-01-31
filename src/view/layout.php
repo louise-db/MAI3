@@ -35,12 +35,12 @@
           <!-- <section class="botNav"> -->
             <ul class="navigation">
               <li class="nav-item"><a href="index.php?page=agenda">Agenda</a></li>
-              <li class="nav-item"><a href="#">Praktisch</a></li>
-              <li class="nav-item"><a href="#">Zone's</a></li>
-              <li class="nav-item"><a href="#">Over</a></li>
-              <li class="nav-item"><a href="#">Blog</a></li>
-              <li class="nav-item"><a href="#">livestream</a></li>
-              <li class="nav-item"><a href="#">join Us</a></li>
+              <li class="nav-item"><a href="index.php?page=errorPage">Praktisch</a></li>
+              <li class="nav-item"><a href="index.php?page=errorPage">Zone's</a></li>
+              <li class="nav-item"><a href="index.php?page=errorPage">Over</a></li>
+              <li class="nav-item"><a href="index.php?page=errorPage">Blog</a></li>
+              <li class="nav-item"><a href="index.php?page=errorPage">livestream</a></li>
+              <li class="nav-item"><a href="index.php?page=errorPage">join Us</a></li>
             </ul>
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
             <label for="nav-trigger"></label>
@@ -59,15 +59,15 @@
 
           <p>Wil je op de hoogte blijven van geplande evenementen?<br />Schrijf je dan in voor onze nieuwsbrief</p>
 
-          <form action="action_page.php">
-            <input type="email" name="email" placeholder="info@DOKgent.be">
+          <form action="index.php">
+            <input type="email" name="email" required placeholder="info@DOKgent.be">
             <input type="submit">
           </form>
         </section>
         <section class="Fsocialmedia">
-          <img src="assets/img/facebook.gif" alt="facebook" />
-          <img src="assets/img/twitter.gif" alt="twitter" />
-          <img src="assets/img/instagram.gif" alt="instagram" />
+          <a href="https://www.facebook.com/DOKgent/" target="_blank"><img src="assets/img/facebook.gif" alt="facebook" /></a>
+          <a href="https://twitter.com/DOKGENT" ><img src="assets/img/twitter.gif" alt="twitter" target="_blank"/></a>
+          <a href="https://www.instagram.com/dokgent/"target="_blank" ><img src="assets/img/instagram.gif" alt="instagram" /></a>
         </section>
       </div>
 
