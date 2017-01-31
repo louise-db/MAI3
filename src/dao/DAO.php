@@ -6,6 +6,12 @@ class DAO {
   private static $dbPass = "ma3_dok";
   private static $sharedPDO;
 
+  // private static $dbHost = "mysqlstudent";
+  // private static $dbName = "louisedebrohr9ha";
+  // private static $dbUser = "louisedebrohr9ha";
+  // private static $dbPass = "Si0lahx2DeiN";
+  // private static $sharedPDO;
+
   protected $pdo;
 
   function __construct() {
