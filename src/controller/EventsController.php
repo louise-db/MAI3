@@ -15,7 +15,7 @@ class EventsController extends Controller {
 
   }
 
-  public function view() {
+  public function agenda() {
 
     $tags = $this->eventDAO->selectTags();
     $this->set('tags', $tags);
@@ -106,10 +106,4 @@ class EventsController extends Controller {
     $events = $this->eventDAO->search($conditions);
     $this->set('events', $events);
   }
-
-  // public function view() {
-  //   $this->set('events', $this->eventDAO->selectAll());
-  //   // $this->set('locations', $this->eventDAO->());
-  //
-  // }
 }

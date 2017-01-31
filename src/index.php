@@ -13,7 +13,7 @@ $routes = array(
   ),
   'agenda' => array(
     'controller' => 'Events',
-    'action' => 'view'
+    'action' => 'agenda'
   ),
   'event-detail' => array(
     'controller' => 'Events',

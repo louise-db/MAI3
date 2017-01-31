@@ -901,45 +901,207 @@ footer .footerDot {
 }
 /*AGENDA_PAGINA*/
 
+h3 {
+  font-weight: bold;
+  color: var(--red_normal);
+  font-size: 5rem;
+  padding: 5rem 0 0 20rem;
+}
+
+.filters {
+  margin: 2rem;
+  border: .5rem solid black;
+  width: 80%;
+  height: 25rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: var(--red_normal);
+  text-transform: uppercase;
+  font-weight: bold;
+
+  & ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+    font-weight: lighter;
+    text-transform: none;
+    margin-top: 1rem;
+
+    & li {
+      padding: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.filtersBg {
+  z-index: -33;
+  width: 80%;
+  height: 2rem;
+  background-image: var(--dot_pattern);
+  background-size: 1rem 1rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+}
+
+.filters input[type=checkbox] {
+  display: none;
+  cursor: pointer;
+}
+
+.filters input[type=checkbox]:checked + label {
+  color: var(--blue_normal);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.filter1 {
+  margin-top: 2rem;
+}
+
+.filter2 {
+  margin-top: 2rem;
+  width: 30%;
+  height: 5rem;
+}
+
+.filter3 {
+  margin-top: 2rem;
+  width: 40%;
+  height: 4rem;
+}
+
 .toggle {
   display: none;
   visibility: hidden;
 }
 
-.toggle label {
+label[for='toggle'] {
   display: block;
+  top: 5rem;
+  left: 40rem;
+  position: absolute;
   padding: .5em;
   text-align: center;
-  color: var(--red_dark);
+  color: var(--blue_normal);
 }
 
-.toggle label:hover {
-  color: var(--red_dark);
+label[for='toggle']:hover {
+  color: var(--blue_dark);
 }
 
-.toggle label::before {
+label[for='toggle']:checked {
+  color: var(--blue_dark);
+}
+
+label[for='toggle']::after {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 4rem;
+  color: var(--blue_dark);
   content: '+';
-  vertical-align: text-top;
+  vertical-align: middle;
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  background: radial-gradient(ellipse at center, var(--red_light) 50%, transparent 50%);
+  width: 4rem;
+  height: 4rem;
+  background: radial-gradient(ellipse at center, var(--blue_light) 50%, transparent 50%);
 }
 
 .expand {
+  margin-top: 2rem;
   height: .01rem;
   overflow: hidden;
-  transition: height .5s;
+  transition: height .2s;
 }
 
 .toggle:checked ~ .expand {
-  height: 25rem;
+  height: 28rem;
 }
 
-.toggle:checked ~ label::before {
+.toggle:checked ~ label::after {
   content: '-';
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.agendaPage h4 {
+  font-size: 4rem;
+  font-style: italic;
+  color: var(--blue_normal);
+  text-align: center;
+  margin: 3rem 0 0;
+}
+
+.searchResults {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  & article {
+    width: 30%;
+    height: auto;
+    border: .2rem solid black;
+    margin: 5rem 0;
+  }
+}
+
+article {
+
+  & h2 {
+    color: var(--red_dark);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  & dl {
+    width: 90%;
+    margin: auto;
+  }
+
+  & .time {
+    color: var(--red_normal);
+    margin-bottom: 2rem;
+  }
+
+  & ul {
+    color: var(--red_normal);
+    font-weight: bold;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  & .location li:first-child {
+    padding-right: 2rem;
+  }
+
+  & .location ul {
+    margin-bottom: .5rem;
+  }
+
+  & .tags ul {
+    margin-bottom: 2rem;
+    font-weight: lighter;
+    color: var(--blue_normal);
+    text-transform: uppercase;
+    justify-content: space-around;
+  }
+}
+
+.descrBox {
+  overflow: hidden;
+  /*margin: 0 auto;*/
+  width: 85%;
+  height: 15rem;
+  font-weight: lighter;
+  line-height: 1.5em;
 }
 
 @media (width <= 1046px) {

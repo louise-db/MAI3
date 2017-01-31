@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>DOK</title>
-	<link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
 </head>
+    <?php echo $css;?>
 
 <body>
     <div class="container">
@@ -90,7 +90,6 @@
       </div>
     </footer>
     </div>
-    <?php echo $css;?>
     <?php echo $js;?>
   </body>
 </html>
