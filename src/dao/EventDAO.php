@@ -75,13 +75,7 @@ class EventDAO extends DAO {
     }
     return $result;
   }
-  //
-  //
-  //
-// EXTRA BIJ
-//
-//
-  //
+
   public function selectLocations() {
     $sql = "SELECT * FROM `ma3_dok_locations`";
     $stmt = $this->pdo->prepare($sql);

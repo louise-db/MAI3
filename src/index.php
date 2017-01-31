@@ -15,7 +15,7 @@ $routes = array(
     'controller' => 'Events',
     'action' => 'agenda'
   ),
-  'event-detail' => array(
+  'detail' => array(
     'controller' => 'Events',
     'action' => 'detail'
   ),

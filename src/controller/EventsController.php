@@ -106,4 +106,23 @@ class EventsController extends Controller {
     $events = $this->eventDAO->search($conditions);
     $this->set('events', $events);
   }
+
+  public function detail() {
+    $tags = $this->eventDAO->selectTags();
+    $this->set('tags', $tags);
+
+    $locations = $this->eventDAO->selectLocations();
+    $this->set('locations', $locations);
+
+		if(empty($_GET['id'])) {
+			$this->redirect('agenda.php');
+		}
+		$event = $this->eventDAO->selectById($_GET['id']);
+		if(empty($event)) {
+			$this->redirect('agenda.php');
+		}else {
+		$this->set('event', $event);
+		}
+
+	}
 }

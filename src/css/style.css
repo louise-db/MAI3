@@ -18,6 +18,11 @@ body {
   font-size: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   z-index: 33;
 }
@@ -909,12 +914,11 @@ h3 {
 }
 
 .filters {
-  margin: 2rem;
+  margin: 2rem auto 0;
   border: .5rem solid black;
   width: 80%;
   height: 25rem;
   border-radius: 1rem;
-  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -1102,6 +1106,50 @@ article {
   height: 15rem;
   font-weight: lighter;
   line-height: 1.5em;
+}
+
+.DetAlgInfo {
+
+  & h2 {
+    color: var(--red_dark);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  & dl {
+    width: 90%;
+    margin: auto;
+  }
+
+  & .time {
+    color: var(--red_normal);
+    margin-bottom: 2rem;
+  }
+
+  & ul {
+    color: var(--red_normal);
+    font-weight: bold;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  & .location li:first-child {
+    padding-right: 2rem;
+  }
+
+  & .location ul {
+    margin-bottom: .5rem;
+  }
+
+  & .tags ul {
+    margin-bottom: 2rem;
+    font-weight: lighter;
+    color: var(--blue_normal);
+    text-transform: uppercase;
+    justify-content: space-around;
+  }
 }
 
 @media (width <= 1046px) {

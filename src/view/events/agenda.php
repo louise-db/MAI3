@@ -45,16 +45,10 @@
   <h4>Evenementen</h4>
   <section class="searchResults">
   <?php foreach($events as $event): ?>
+    <?php echo "<a href=\"index.php?page=detail&amp;id=" . $event['id'] . "\">"; ?>
       <article>
         <header><h2><?php echo $event['title']; ?></h2></header>
         <dl>
-          <!-- <dt>start</dt> -->
-          <!-- <dt>end</dt><dd><?php echo $event['end'];?></dd> -->
-          <!-- <dt>organiser</dt>
-          <dd><?php echo $event['organiser'];?></dd>
-          <dt>title</dt> -->
-          <!-- <dd><?php echo $event['title'];?></dd> -->
-          <!-- <dt>locaties</dt> -->
           <dd class="location">
             <ul><?php foreach($event['locations'] as $location): ?>
               <li>
@@ -64,8 +58,6 @@
           </dd>
 
           <dd class="time"><?php echo $event['start'];?></dd>
-
-          <!-- <dt>description</dt> -->
           <dd>
             <div class="descrBox">
               <p>
@@ -73,8 +65,6 @@
               </p>
             </div>
           </dd>
-
-          <!-- <dt>tags</dt> -->
           <dd class="tags">
             <ul><?php foreach($event['tags'] as $tag): ?>
               <li>#<?php echo $tag['tag'];?></li>
@@ -82,6 +72,8 @@
           </dd>
         </dl>
       </article>
+      <?php echo "</a>"; ?>
+
   <? endforeach;?>
   </section>
 </section>
