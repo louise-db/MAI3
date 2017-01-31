@@ -46,6 +46,7 @@
       <article>
         <header><h2><?php echo $event['title']; ?></h2></header>
         <dl>
+          <dt></dt>
           <dd class="location">
             <ul><?php foreach($event['locations'] as $location): ?>
               <li>
@@ -54,7 +55,9 @@
             <?php endforeach;?></ul>
           </dd>
 
+          <dt></dt>
           <dd class="time"><?php echo $event['start'];?></dd>
+          <dt></dt>
           <dd>
             <div class="descrBox">
               <p>
@@ -62,6 +65,7 @@
               </p>
             </div>
           </dd>
+          <dt></dt>
           <dd class="tags">
             <ul><?php foreach($event['tags'] as $tag): ?>
               <li>#<?php echo $tag['tag'];?></li>

@@ -9,13 +9,14 @@
 
     <section class="detInfoTop">
       <div class="detInfoImg">
-        <img src="assets/img/evenement_detail.jpg"/>
+        <img src="assets/img/evenement_detail.jpg alt="evenement""/>
         <div class="detInfoImgBg"></div>
       </div>
 
       <section class="detAlgInfo">
         <header><h2><?php echo $event['title']; ?></h2></header>
         <dl>
+          <dt></dt>
 
           <!-- <dd class="location">
             <ul><?php foreach($event['locations'] as $location): ?>
@@ -24,7 +25,7 @@
               </li>
             <?php endforeach;?></ul>
           </dd> -->
-
+          <dt></dt>
           <dd class="time"><?php echo $event['start'];?></dd>
 
           <!-- <dd class="tags">

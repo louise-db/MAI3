@@ -43,7 +43,7 @@ header {
 }
 
 .newsdrop {
-  border: .5 solid black;
+  border: .5rem solid black;
   width: 33%;
   color: white;
   font-weight: lighter;
@@ -66,7 +66,6 @@ header {
 .search {
   padding-left: 10%;
   width: 30%;
-  position: right;
 }
 
 input[type=text] {
@@ -138,14 +137,15 @@ input[type=text] {
   & a {
     display: block;
     padding: 1em;
-    color: var(--red_normal);
+    color: white;
     font-size: 1.2em;
+    font-weight: bold;
     text-decoration: none;
   }
 
   & a:hover {
-    color: var(--red_dark);
-    background: white;
+    color: var(--blue_light);
+    background: var(--blue_normal);
     font-style: italic;
   }
 }
@@ -783,7 +783,7 @@ footer .footerDot {
   position: absolute;
   height: 3rem;
   width: 100%;
-  background: var(--dot_pattern);
+  background-image: var(--dot_pattern);
   background-position: 0 0, 8rem 8rem;
   background-size: 1rem 1rem;
   border-radius: 2rem;

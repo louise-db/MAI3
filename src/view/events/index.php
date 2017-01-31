@@ -80,7 +80,7 @@
         <div class="DkBol"></div>
         <section class="DkInfo">
           <h4>Dokkeuken</h4>
-          <p>Wisselkeuken is een gedeelde horecaruimte waar koks en culinair geïnteresseerden die de mogelijkheid krijgen om hun concept uit te proberen of te experimenteren met voeding. Het is de bedoeling dat je je eigen benodigdheden en materiaal voorziet (geen wegwerp). Deze ruimte kan je gebruiken voor een onbepaalde periode, naargelang de noden van je idee of concept.</p>
+          <p>Wisselkeuken is een gedeelde horecaruimte waar koks en culinair geïnteresseerden die de mogelijkheid krijgen om hun concept uit te proberen of te experimenteren met voeding. Het is de bedoeling dat je je eigen benodigdheden en materiaal voorziet (geen wegwerp). Deze ruimte kan je gebruiken voor een onbepaalde periode, naargelang de noden van je idee of concept.</p>
           <p><span>Aanvraag Dokkeuken</span></p>
         </section>
       </article>
@@ -112,7 +112,7 @@
         <article class="blog2">
           <p class="BlogTitel">De buurderij</p>
           <img src="assets/img/blog2.jpg" class="blogImg" alt="blog#2" />
-          <p class="blogTekst">De Buurderij is dé manier om al je voedsel rechtstreeks bij de boer of producent te kopen. Nooit meer naar de supermarkt, een eerlijk inkomen voor wie het voedsel produceert..</p>
+          <p class="blogTekst">De Buurderij is dé manier om al je voedsel rechtstreeks bij de boer of producent te kopen. Nooit meer naar de supermarkt, een eerlijk inkomen voor wie het voedsel produceert.. </p>
           <p class="blogDoorklik">Lees meer</p>
           <p class="BlHashtag"><span>#Buurderij</span><span>#DOK2016</span><span></span></p>
         </article>
@@ -156,7 +156,7 @@
           </article>
         </a></li>
 
-        <li><a href="https://www.instagram.com/dokgent/"target="_blank" >
+        <li><a href="https://www.instagram.com/dokgent/" target="_blank" >
           <article class="social3">
             <img class="socialID" src="assets/img/socialI.png" alt="socialID" />
             <div class="socialPostOverlay">
@@ -169,7 +169,7 @@
           </article>
         </a></li>
 
-        <li><a href="https://www.instagram.com/dokgent/"target="_blank" >
+        <li><a href="https://www.instagram.com/dokgent/" target="_blank" >
           <article class="social4">
             <img src="assets/img/socialI.gif" class="socialID" alt="socialID" />
             <div class="socialPostOverlay">
@@ -182,7 +182,7 @@
           </article>
         </a></li>
 
-        <li><a href="https://www.instagram.com/dokgent/"target="_blank" >
+        <li><a href="https://www.instagram.com/dokgent/" target="_blank" >
           <article class="social5">
             <img src=" assets/img/socialI.gif" class="socialID" alt="socialID" />
             <div class="socialPostOverlay">

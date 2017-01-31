@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>DOK</title>
   <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+  <?php echo $css;?>
 </head>
-    <?php echo $css;?>
+
 
 <body>
     <div class="container">
@@ -65,9 +66,9 @@
           </form>
         </section>
         <section class="Fsocialmedia">
-          <a href="https://www.facebook.com/DOKgent/" target="_blank"><img src="assets/img/facebook.gif" alt="facebook" /></a>
-          <a href="https://twitter.com/DOKGENT" ><img src="assets/img/twitter.gif" alt="twitter" target="_blank"/></a>
-          <a href="https://www.instagram.com/dokgent/"target="_blank" ><img src="assets/img/instagram.gif" alt="instagram" /></a>
+          <a href="https://www.facebook.com/DOKgent/" target="_blank" ><img src="assets/img/facebook.gif" alt="facebook" /></a>
+          <a href="https://twitter.com/DOKGENT" ><img src="assets/img/twitter.gif" alt="twitter" /></a>
+          <a href="https://www.instagram.com/dokgent/" target="_blank" ><img src="assets/img/instagram.gif" alt="instagram" /></a>
         </section>
       </div>
 
