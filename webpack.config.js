@@ -12,7 +12,7 @@ const extractCSS = new ExtractTextWebpackPlugin(`css/style.css`);
 
 // change for production build on different server path
 // const publicPath = `/louise.de.brauwer/20162017/ma3/DOK/`;
-const publicPath = `/`;
+const publicPath = ``;
 
 const port = 3000;
 

@@ -9,7 +9,7 @@
 
     <section class="detInfoTop">
       <div class="detInfoImg">
-        <img src="assets/img/evenement_detail.jpg alt="evenement""/>
+        <img src="assets/img/evenement_detail.jpg" alt="evenement"/>
         <div class="detInfoImgBg"></div>
       </div>
 
@@ -19,12 +19,13 @@
           <dt></dt>
 
           <!-- <dd class="location">
-            <ul><?php foreach($event['locations'] as $location): ?>
+            <ul><?php foreach($event['id'] as $id): ?>
               <li>
                 <?php echo $location['name'];?>
               </li>
             <?php endforeach;?></ul>
           </dd> -->
+
           <dt></dt>
           <dd class="time"><?php echo $event['start'];?></dd>
 
@@ -61,5 +62,5 @@
         </div>
       </section>
   </section>
-  <button onclick="history.go(-1);">Terug naar agenda</button>
+  <button class="detailButton" onclick="history.go(-1);">Terug naar agenda</button>
 </section>

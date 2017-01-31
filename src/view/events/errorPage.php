@@ -1,5 +1,4 @@
 <section class="errorPage" id="content">
-  <button onclick="history.go(-1);">Terug</button>
   <div class="errorImg">
     <img src="assets/img/404_1.png" alt="Woopsiedaisy" class="imgOne" />
     <img src="assets/img/404_2.png" alt="Woopsiedaisy" class="imgTwo" />
@@ -9,4 +8,6 @@
   <p>
     De pagina die je zoekt is momenteel niet beschikbaar
   </p>
+
+  <button onclick="history.go(-1);">Terug</button>
 </section>

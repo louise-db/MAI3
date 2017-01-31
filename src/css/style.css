@@ -43,7 +43,6 @@ header {
 }
 
 .newsdrop {
-  border: .5rem solid black;
   width: 33%;
   color: white;
   font-weight: lighter;
@@ -133,6 +132,7 @@ input[type=text] {
 
 .nav-item {
   width: 15rem;
+  background: var(--blue_normal);
 
   & a {
     display: block;
@@ -159,6 +159,7 @@ input[type=text] {
   bottom: 100%;
   left: 0;
   z-index: 1;
+  transition: left .2s;
 }
 
 .nav-trigger {
@@ -176,16 +177,16 @@ label[for='nav-trigger'] {
   background-image: url(../assets/img/burgermenu.png);
 }
 
-.nav-trigger + label, .site-wrap {
+.nav-trigger + label {
   transition: left .2s;
 }
 
 .nav-trigger:checked + label {
-  left: 215px;
+  left: 14rem;
 }
 
 .nav-trigger:checked ~ .site-wrap {
-  left: 200px;
+  left: 20rem;
 }
 
 .intro {
@@ -210,7 +211,7 @@ label[for='nav-trigger'] {
 }
 
 .introMan {
-  width: 30%;
+  width: 25%;
   height: auto;
 }
 
@@ -237,6 +238,7 @@ label[for='nav-trigger'] {
     font-style: oblique;
     font-size: 4rem;
     text-align: right;
+    margin-bottom: 5rem;
   }
 }
 
@@ -246,7 +248,13 @@ label[for='nav-trigger'] {
   text-align: center;
   border: 1rem solid transparent;
   padding: 1.5rem;
+  font-size: 2.2rem;
   border-image: url(../assets/img/borderIntro.png) 15 round;
+
+  & span {
+    font-weight: bold;
+    color: var(--red_normal);
+  }
 }
 
 .sfeerfotos {
@@ -315,12 +323,13 @@ label[for='nav-trigger'] {
   width: 7rem;
   height: 16rem;
   margin: 25rem 0 0 15rem;
-  transform-origin: 50% 0;
+  transform-origin: 0 0;
   animation: swinging 3.5s ease-in-out forwards infinite;
 }
 
 .livestream {
-  margin-top: 15rem;
+  width: 80%;
+  margin: 15rem auto 0;
   height: 55rem;
 
   & h3 {
@@ -435,6 +444,11 @@ label[for='nav-trigger'] {
   border-radius: 1rem;
 }
 
+.LsEvenement .evenement:hover {
+  border: .4rem solid var(--red_dark);
+  border-radius: 1rem;
+}
+
 .LsEvenement .LsOtherTitle {
   position: absolute;
   text-align: center;
@@ -477,6 +491,13 @@ label[for='nav-trigger'] {
     border-radius: 1.5rem;
     box-shadow:
       0 0 0 .5rem var(--blue_normal),
+      0 0 0 .8rem black;
+  }
+
+  & .JuOther:hover {
+    color: var(--blue_dark);
+    box-shadow:
+      0 0 0 .5rem var(--blue_dark),
       0 0 0 .8rem black;
   }
 }
@@ -531,9 +552,14 @@ label[for='nav-trigger'] {
   font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding-bottom: .7rem;
-  border-bottom: .6rem solid var(--red_dark);
+  padding-bottom: .4rem;
+  border-bottom: .5rem solid var(--red_dark);
   border-radius: .5rem;
+}
+
+.DkInfo span:hover {
+  color: var(--red_light);
+  border-bottom: .5rem solid var(--red_light);
 }
 
 .dokbewoners {
@@ -594,6 +620,11 @@ label[for='nav-trigger'] {
     padding-bottom: .7rem;
     border-bottom: .6rem solid var(--red_dark);
     border-radius: .5rem;
+  }
+
+  & span:hover {
+    color: var(--red_light);
+    border-bottom: .5rem solid var(--red_light);
   }
 }
 
@@ -658,6 +689,10 @@ label[for='nav-trigger'] {
     text-transform: uppercase;
     border-bottom: .3rem solid var(--red_normal);
     cursor: pointer;
+
+    p a {
+      color: var(--red_normal);
+    }
   }
 
   & .blogDoorklik:hover {
@@ -887,7 +922,7 @@ footer .footerDot {
 }
 /*AGENDA_PAGINA*/
 
-h3 {
+.agendaPage h3 {
   font-weight: bold;
   color: var(--red_normal);
   font-size: 5rem;
@@ -1000,6 +1035,10 @@ label[for='toggle']::after {
   height: .01rem;
   overflow: hidden;
   transition: height .2s;
+
+  & label {
+    font-size: 1.8rem;
+  }
 }
 
 .toggle:checked ~ .expand {
@@ -1134,9 +1173,9 @@ article {
 .detInfoImgBg {
   position: absolute;
   width: 46%;
-  height: 32rem;
+  height: 20rem;
   z-index: -33;
-  top: 14rem;
+  top: 21rem;
   left: 7rem;
   background-image: var(--dot_pattern);
   background-size: 1rem 1rem;
@@ -1248,15 +1287,15 @@ article {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    margin-top: -2rem;
+    padding-top: 5rem;
   }
 
   & button {
     background-color: white;
-    color: black;
+    color: var(--blue_dark);
     cursor: pointer;
-    margin: 5rem 0 0 10rem;
-    padding: 1rem 2.2rem;
+    margin: 50% 0 0 45%;
+    padding: .2rem 2.2rem;
     font-size: 3rem;
     border: .2rem solid var(--blue_normal);
     border-radius: 1rem;
@@ -1271,7 +1310,7 @@ article {
   & img {
     width: 40%;
     height: auto;
-    padding-top: 2rem;
+    padding-top: 6rem;
     margin-top: 5rem;
     position: absolute;
   }
@@ -1284,12 +1323,290 @@ article {
 
 }
 
+.detailPage .detailButton {
+  border: .5rem solid var(--blue_normal);
+  background-color: white;
+  color: var(--blue_normal);
+  font-weight: normal;
+  font-size: 2rem;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.detailPage .detailButton:focus {
+  outline: none;
+}
+
+.time {
+  margin-top: 2rem;
+}
+
 @media (width <= 1046px) {
 
   .newsdrop p {
-    /*width: 60%;*/
     font-size: 1.6rem;
   }
+
+  .detInfoImgBg {
+    top: 18rem;
+  }
+
+  .introWoman {
+    position: absolute;
+  }
+
+  .titel {
+    margin: 5rem 0 0 20%;
+  }
+
+  .introtekst {
+    width: 40%;
+  }
+
+  .searchResults {
+    flex-wrap: wrap;
+
+    & a {
+      width: 60rem;
+    }
+  }
+}
+
+@media (width <= 855px) {
+
+  .newsdrop {
+    margin-left: 2rem;
+
+    & p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .introWoman {
+    width: 40%;
+  }
+
+  .introMan {
+    display: none;
+  }
+
+  .titel h1 {
+    font-size: 10rem;
+
+    & span {
+      font-size: 8rem;
+    }
+  }
+
+  .titel h2 {
+    font-size: 2rem;
+  }
+
+  .titel h3 {
+    font-size: 4rem;
+  }
+
+  .introtekst {
+    width: 60%;
+    margin-left: 40%;
+  }
+
+  .sfeerfotos {
+    flex-direction: column;
+  }
+
+  .sfeerfoto1, .sfeerfoto2 {
+    margin-left: 25%;
+    width: 50%;
+    height: auto;
+    position: absolute;
+  }
+
+  .sfeerfoto2 {
+    margin-top: 28rem;
+  }
+
+  .sfeerfoto3 {
+    display: none;
+  }
+
+  .sf1, .sf2, .sf3 {
+    display: none;
+  }
+
+  .BGmic {
+    margin: 50rem 0 0 50%;
+    position: absolute;
+  }
+
+  .lsInner {
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 200rem;
+    justify-content: space-between;
+  }
+
+  .fallback {
+    width: 100%;
+  }
+
+  .LsInnerInfo {
+    position: absolute;
+    margin: 35rem 10% 0 0;
+  }
+
+  .joinUs {
+    margin-top: 40rem;
+  }
+
+  .dokkeuken, .dokbewoners {
+    flex-direction: column;
+  }
+
+  .DkBol, .DbBol {
+    display: none;
+  }
+
+  .dokkeuken .DkInfo, .dokbewoners .DbInfo {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .BlogInner {
+    flex-wrap: wrap;
+
+    & article {
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .footerTop {
+    flex-direction: column;
+  }
+
+  .Fnewsletter {
+    text-align: center;
+    width: 80%;
+    margin-left: 30%;
+
+    & h5 {
+      text-align: center;
+    }
+  }
+
+  .Fsocialmedia {
+    width: 10%;
+
+    & img {
+      width: 60%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .expand label {
+    font-size: 1.45rem;
+  }
+
+  .searchResults a {
+    width: 50rem;
+  }
+
+  .detInfoImgBg {
+    display: none;
+  }
+
+  .detOther {
+    width: 95%;
+
+    & h5 {
+      margin-left: 10%;
+    }
+  }
+
+  .detOtherFlex {
+    flex-direction: column;
+    width: 100%;
+
+    & .detEvenement {
+      width: 20rem;
+    }
+  }
+
+  .errorPage {
+
+    & p {
+      font-size: 2.5rem;
+    }
+
+    & button {
+      margin: 50% 0 0 40%;
+      padding: .2rem 2.2rem;
+      font-size: 3rem;
+      border: .2rem solid var(--blue_normal);
+      border-radius: 1rem;
+      position: relative;
+    }
+  }
+
+}
+
+@media (width <= 620px) {
+
+  .newsdrop {
+    display: none;
+    width: 1rem;
+  }
+
+  .introWoman {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 90%;
+  }
+
+  .titel {
+    margin: 0 auto;
+
+    & h3 {
+      text-align: center;
+      padding-left: .1rem;
+    }
+
+    & h2 {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    & h1 {
+      text-align: center;
+    }
+  }
+
+  .introtekst {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .BGmic {
+    margin: 47rem 0 0 50%;
+    position: absolute;
+  }
+
+  .LsEvenement {
+    width: 10%;
+  }
+
+  .searchResults a {
+    font-size: 1.2rem;
+  }
+
 }
 
 @keyframes swinging {

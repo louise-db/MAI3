@@ -12,8 +12,7 @@
       </section>
 
       <div class="introtekst">
-        <p><span>DOK</span> is een ontmoetingsplek voor elke Gentenaar, een hangplek voor piepjong, jong, minder jong en ronduit oud. Maar ook een platform voor creatie en een werkplek, een plaats voor organisaties of indivduen op zoek naar samenwerking
-          en inspirerende kruisbestuivingen.</p>
+        <p><span>DOK</span> is een ontmoetingsplek voor elke Gentenaar, <span>een hangplek</span> voor piepjong, jong, minder jong en ronduit oud. Maar ook een platform voor creatie en een werkplek, een plaats voor organisaties of indivduen op zoek naar <span>samenwerking</span> en inspirerende kruisbestuivingen.</p>
       </div>
 
       <section class="sfeerfotos">
@@ -56,7 +55,7 @@
 
               <div class="LsEvenement">
                 <img src="assets/img/evenement2.jpg" alt="evenement2" class="evenement" />
-                <p class="LsOtherTitle"><span>17/06</span> - Les Frères troubouch</p>
+                <p class="LsOtherTitle"><span>17/06</span> - Les Freres troubouch</p>
                 <p class="duration">23:40</p>
               </div>
 
@@ -81,7 +80,7 @@
         <section class="DkInfo">
           <h4>Dokkeuken</h4>
           <p>Wisselkeuken is een gedeelde horecaruimte waar koks en culinair geïnteresseerden die de mogelijkheid krijgen om hun concept uit te proberen of te experimenteren met voeding. Het is de bedoeling dat je je eigen benodigdheden en materiaal voorziet (geen wegwerp). Deze ruimte kan je gebruiken voor een onbepaalde periode, naargelang de noden van je idee of concept.</p>
-          <p><span>Aanvraag Dokkeuken</span></p>
+          <a href="index.php?page=errorPage"><p><span>Aanvraag dokKeuken</span></p></a>
         </section>
       </article>
 
@@ -91,11 +90,11 @@
         <section class="DbInfo">
           <h4>Dokbewoners</h4>
           <p>DOK opent zijn deur voor zowel individuen en buurtbewoners als voor bedrijven, collectieven of organisaties. Wat er gebeurt op DOK wordt bepaald door de DOKbewoners. Voor het nieuwe seizoen is DOK altijd op zoek naar nieuwe DOKbewoners, residents, die DOK 2017 mee vorm en kleur willen geven met  creatieve manoeuvres</p>
-          <p><span>Aanvraag dokbewoners</span></p>
+          <a href="index.php?page=errorPage"><p><span>Aanvraag dokBewoners</span></p></a>
         </section>
       </article>
 
-      <p class="JuOther">Bekijk andere mogelijke applicaties</p>
+      <a href="index.php?page=errorPage"><p class="JuOther">Bekijk andere mogelijke applicaties</p></a>
     </section>
 
     <section class="blog">
@@ -105,7 +104,7 @@
           <p class="BlogTitel">Een blik op dok 2016</p>
           <img src="assets/img/blog1.jpg" class="blogImg" alt="blog#1" />
           <p class="blogTekst">DOK gaat in een diepe winterslaap, maar zijn DOKbewoners zijn dat allerminst van plan. We geven je graag een overzicht van wat iedereen zoal van plan is, het komende jaar..</p>
-          <p class="blogDoorklik">Lees meer</p>
+          <a href="index.php?page=errorPage"><p class="blogDoorklik">Lees meer</p></a>
           <p class="BlHashtag"><span>#DOKbewoner</span><span>#DOK2016</span></p>
         </article>
 
@@ -113,7 +112,7 @@
           <p class="BlogTitel">De buurderij</p>
           <img src="assets/img/blog2.jpg" class="blogImg" alt="blog#2" />
           <p class="blogTekst">De Buurderij is dé manier om al je voedsel rechtstreeks bij de boer of producent te kopen. Nooit meer naar de supermarkt, een eerlijk inkomen voor wie het voedsel produceert.. </p>
-          <p class="blogDoorklik">Lees meer</p>
+          <a href="index.php?page=errorPage"><p class="blogDoorklik">Lees meer</p></a>
           <p class="BlHashtag"><span>#Buurderij</span><span>#DOK2016</span><span></span></p>
         </article>
 
@@ -121,7 +120,7 @@
           <p class="BlogTitel">Dok gaat door in 2017 en 2018 &#33;</p>
           <img src="assets/img/blog3.jpg" class="blogImg" alt="blog#3" />
           <p class="blogTekst">In de zomers van 2017 en 2018 zal DOK de intussen bekende site aan de Schipperskaai in de Gentse Oude Dokken weer kunnen innemen..</p>
-          <p class="blogDoorklik">Lees meer</p>
+          <a href="index.php?page=errorPage"><p class="blogDoorklik">Lees meer</p></a>
           <p class="BlHashtag"><span>#Oudedokken</span><span>#DOK2016</span></p>
         </article>
       </section>
